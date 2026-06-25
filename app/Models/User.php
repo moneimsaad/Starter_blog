@@ -46,4 +46,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function Blogs ()
+    {
+        return $this ->hasMany(Blog::class);
+    }
+
+
+
 }
